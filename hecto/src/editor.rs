@@ -6,6 +6,10 @@ use termion::raw::IntoRawMode;
 pub struct Editor {}
 
 impl Editor {
+    pub fn default() -> Self {
+        Editor{}
+    }
+
     pub fn run(&self) {
         let _stdout = stdout().into_raw_mode().unwrap();
 
