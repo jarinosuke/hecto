@@ -51,6 +51,10 @@ impl Terminal {
         }
     }
 
+    pub fn clear_current_line() {
+        println!("{}", termion::clear::CurrentLine);
+    }
+
     pub fn cursor_show() {
         print!("{}", termion::cursor::Hide);
     }
